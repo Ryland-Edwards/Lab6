@@ -9,6 +9,16 @@ const int MAX_SIZE = 100;
 
 
 // Function to read matrix data from a file
+/**
+ * Reads two matrices of size `size` from a file with the given filename and stores them in `matrix1` and `matrix2`.
+ * 
+ * @param matrix1 The first matrix to be read from the file.
+ * @param matrix2 The second matrix to be read from the file.
+ * @param size The size of the matrices to be read.
+ * @param filename The name of the file to read the matrices from.
+ */
+
+// `const char* filename` is a pointer to a constant character. It is a pointer to the first character in the string.
 void readMatrixFromFile(int matrix1[MAX_SIZE][MAX_SIZE], int matrix2[MAX_SIZE][MAX_SIZE], int& size, const char* filename) {
     std::ifstream file(filename);
     if (file) {
